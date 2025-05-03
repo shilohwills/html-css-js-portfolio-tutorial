@@ -510,6 +510,12 @@ article .icon {
   margin-bottom: 20px;
 }
 
+.title-1 {
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+}
+
 /*FOOTER SECTION*/
 
 footer {
