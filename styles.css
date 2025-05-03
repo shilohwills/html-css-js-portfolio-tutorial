@@ -198,6 +198,7 @@ section {
 .title{
     font-size: 3rem;
     text-align: center;
+    color: black;
 }
 
 #social-container{
@@ -420,6 +421,93 @@ article .icon {
 
 .email-icon{
     height: 2.5rem;
+}
+
+/*HIRE SECTION*/
+
+.hire-me {
+  background: linear-gradient(135deg, white white);
+  color: #fff;
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+.hire-me .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hire-me h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hire-me .intro {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  color: rgb(85,85, 85);
+}
+
+.packages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.package {
+  background-color: transparent;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: black;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-radius: 2rem;
+}
+
+.package:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.package h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.package .price {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.package ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.package ul li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.package ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: black;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
 /*FOOTER SECTION*/
