@@ -6,6 +6,10 @@
     .about-container{
         flex-wrap: wrap;
     }
+    .title-1 {
+        font-size: 1rem;
+        text-align: center;
+    }
 
 }
     
@@ -43,6 +47,10 @@
     }
     .about-containers {
         margin-top: 0;
+    }
+    .title-1 {
+        font-size: 1rem;
+        text-align: center;
     }
 }
 
