@@ -1,6 +1,10 @@
-function toggleMenu() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
-}
+const hamburger = document.getElementById('hamburger');
+const menuLinks = document.getElementById('menu-links');
+
+hamburger.addEventListener('click', () => {
+  // Toggle menu visibility
+  menu-links.classList.toggle('active');
+  
+  // Toggle hamburger animation
+  hamburger.classList.toggle('active');
+});
