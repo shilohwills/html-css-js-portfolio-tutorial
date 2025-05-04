@@ -105,8 +105,8 @@ a:hover{
     stroke-dasharray: 20 300;
     stroke-dashoffset: -32.42;
   }
-  /**/
-#hamburger-nav{
+
+  #hamburger-nav{
     display: none;
 }
 
@@ -116,15 +116,15 @@ a:hover{
 }
 
 .menu-links{
-    position: absolute;
     display: none;
+    position: absolute;
     top: 100%;
     right: 0;
     background-color: white;
-    width: 100%;
+    width: fit-content;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3 ease-in-out;
+    transition: all 0.3 ease-in-out;
 }
 
 .menu-links a{
@@ -141,12 +141,11 @@ a:hover{
     list-style: none;
 }
 
-.menu-links.active{
-    max-height: 500px;
+.js-menu-links.open{
+    max-height: 300px;
     display: flex;
+    flex-direction: column;
 }
-
-
 
 /*SECTION*/
 

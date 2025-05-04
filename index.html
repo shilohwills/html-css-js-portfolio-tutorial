@@ -24,8 +24,9 @@
     <nav id="hamburger-nav">
         <div class="logo">Egbuji Shiloh</div>
         <div class="hamburger-menu">
-            <label class="hamburger">
-                <input type="checkbox"/>
+         <div class="js-hamburger" onclick="toggleMenu()">
+            <label class="hamburger ">
+                <input type="checkbox" />
                 <svg viewBox="0 0 32 32">
                   <path
                     class="line line-top-bottom"
@@ -34,12 +35,12 @@
                   <path class="line" d="M7 16 27 16"></path>
                 </svg>
               </label>
-
-            <div class="menu-links">
+         </div>
+            
+            <div class="menu-links js-menu-links" onclick="toggleMenu()">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#hire">Hire</a></li>
                 <li><a href="#contact">Contact</a></li>
             </div>
         </div>
