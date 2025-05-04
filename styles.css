@@ -579,7 +579,7 @@ footer p{
     height: 24px;
   }
   
-  .icon {
+  .icon-1 {
     position: absolute;
     top: 0;
     left: 0;
@@ -596,7 +596,7 @@ footer p{
   }
   
   /* Hover animations */
-  .pay-btn:hover .icon {
+  .pay-btn:hover .icon-1 {
     animation: none;
   }
   
@@ -626,7 +626,7 @@ footer p{
   }
   
   /* Active state - show only checkmark */
-  .pay-btn:active .icon {
+  .pay-btn:active .icon-1 {
     animation: none;
     opacity: 0;
     visibility: hidden;
