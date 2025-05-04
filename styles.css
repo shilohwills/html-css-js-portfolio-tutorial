@@ -124,7 +124,7 @@ a:hover{
     width: fit-content;
     max-height: 0;
     overflow: hidden;
-    transition: all 0.3 ease-in-out;
+    transition: all 2 ease-in-out;
 }
 
 .menu-links a{
@@ -134,7 +134,7 @@ a:hover{
     font-size: 1..5rem;
     color: black;
     text-decoration: none;
-    transition: all 0.3 ease-in-out;
+    transition: all 2 ease-in-out;
 }
 
 .menu-links li{
@@ -144,8 +144,8 @@ a:hover{
 .js-menu-links.open{
     max-height: 300px;
     display: flex;
-    flex-direction: column;
     transition: all 2 ease-in-out;
+    flex-direction: column;
 }
 
 /*SECTION*/
