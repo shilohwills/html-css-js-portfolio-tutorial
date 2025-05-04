@@ -145,7 +145,7 @@ a:hover{
     max-height: 300px;
     display: flex;
     flex-direction: column;
-    transition: all 0.6 ease-in-out;
+    transition: all 2 ease-in-out;
 }
 
 /*SECTION*/
