@@ -75,7 +75,6 @@ a:hover{
 
 .hamburger {
     cursor: pointer;
-    padding-top: 5px;
   }
   
   .hamburger input {
@@ -156,6 +155,9 @@ a:hover{
     flex-direction: column;
 }
 
+.js-hamburger {
+  margin-top: 8px;
+}
 /*SECTION*/
 
 section {
