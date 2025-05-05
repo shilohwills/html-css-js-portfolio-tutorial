@@ -814,6 +814,7 @@ input:checked + .slider:before {
   body.dark-mode li, 
   body.dark-mode .contact-info {
     color: white;
+    transition: all 0.6s ease-in-out;
   }
 
   body.dark-mode .details-container,
@@ -821,6 +822,7 @@ input:checked + .slider:before {
   body.dark-mode .package, 
   body.dark-mode .contact-info-upper-container {
     background-color: rgb(81, 80, 80);
+    transition: all 0.6s ease-in-out;
   }
 
   body.dark-mode .section__text__p1,
@@ -828,16 +830,19 @@ input:checked + .slider:before {
   body.dark-mode .details-container p,
   body.dark-mode .nav-links-1 {
     color: rgb(233, 227, 227);
+    transition: all 0.6s ease-in-out;
   }
 
   body.dark-mode .experience-subtitle {
     color: black;
+    transition: all 0.6s ease-in-out;
   }
 
   body.dark-mode .icon {
     border: 0.5px solid white;
     border-radius: 3rem;
     background-color: white;
+    transition: all 0.6s ease-in-out;
   }
 
   body.dark-mode #hamburger-nav{
@@ -845,4 +850,5 @@ input:checked + .slider:before {
     backdrop-filter: blur(10px); /* Glass blur */
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.6s ease-in-out;
 }
