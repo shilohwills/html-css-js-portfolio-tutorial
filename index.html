@@ -25,16 +25,18 @@
         <div class="logo">Egbuji Shiloh</div>
         <div class="hamburger-menu">
             <div class="switch-hamburger">
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider">
-                    <svg class="slider-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" 
-                    aria-hidden="true" role="presentation"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg> 
-                    </span>
-                </label>
+                <div id="js-switch">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider">
+                        <svg class="slider-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" 
+                        aria-hidden="true" role="presentation"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg> 
+                        </span>
+                    </label>
+                </div>
 
                 <div class="js-hamburger" onclick="toggleMenu()">
-                    <label class="hamburger ">
+                    <label class="hamburger">
                         <input type="checkbox" />
                         <svg viewBox="0 0 32 32">
                           <path
@@ -397,5 +399,6 @@
         <p>Copyright &#169; 2025 Egbuji Shiloh. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <script src="switch.js"></script>
 </body>
 </html>

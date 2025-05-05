@@ -75,6 +75,7 @@ a:hover{
 
 .hamburger {
     cursor: pointer;
+    padding-top: 5px;
   }
   
   .hamburger input {
@@ -770,3 +771,21 @@ input:checked + .slider:before {
   transform: translateX(1.5em);
   outline-color: #181818;
 }
+
+/*BODY THEME CHANGE*/
+  /* Default light theme */
+  body {
+  background-color: white;
+  color: black;
+  }
+
+  /* Dark theme styles */
+  body.dark-mode {
+  background-color: #121212;
+  color: white;
+  }
+
+  /* Transition for smooth theme switch */
+  body {
+  transition: background-color 0.3s, color 0.3s;
+  }
