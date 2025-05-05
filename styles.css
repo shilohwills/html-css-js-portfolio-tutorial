@@ -66,6 +66,13 @@ a:hover{
 }
 
 /*HAMBURGER*/
+.switch-hamburger {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .hamburger {
     cursor: pointer;
   }
@@ -699,6 +706,7 @@ footer p{
   display: inline-block;
   width: 3.5em;
   height: 2em;
+  margin-right: 5px;
 }
 
 /* Hide default HTML checkbox */
