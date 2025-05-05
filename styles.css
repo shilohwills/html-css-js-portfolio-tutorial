@@ -10,6 +10,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    margin-top: 100px;
 }
 
 html {
@@ -29,8 +30,7 @@ a, .btn {
 /*DESKTOP NAV*/
 
 nav, 
-.nav-links,
-.nav-links-1 {
+.nav-links {
     display: flex;
 }
 
@@ -118,6 +118,16 @@ a:hover{
 
   #hamburger-nav{
     display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.6); /* Light translucent */
+    backdrop-filter: blur(10px); /* Glass blur */
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .hamburger-menu{
@@ -829,3 +839,10 @@ input:checked + .slider:before {
     border-radius: 3rem;
     background-color: white;
   }
+
+  body.dark-mode #hamburger-nav{
+    background: rgba(115, 113, 113, 0.6); /* Light translucent */
+    backdrop-filter: blur(10px); /* Glass blur */
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
