@@ -418,9 +418,14 @@ article .icon {
     color: black;
 }
 
-.project.btn{
+.project-btn{
     color: black;
     border-color: rgb(163,163,163);
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
 }
 
 /*CONTACT SECTION*/
