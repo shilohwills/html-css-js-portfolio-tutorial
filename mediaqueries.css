@@ -10,6 +10,10 @@
     
 
 @media screen and (max-width: 1200px) {
+    body {
+        margin-top: 60px;
+    }
+
     #desktop-nav{
         display: none;
     }
@@ -46,6 +50,10 @@
 }
 
 @media screen and (max-width: 600px) {
+    body {
+        margin-top: 60px;
+    }
+
     #contact, footer {
         height: 40vh;
     }

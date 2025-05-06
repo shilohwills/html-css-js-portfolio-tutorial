@@ -1,15 +1,16 @@
-const toggleInput = document.getElementById('js-switch');
+const toggleInput = document.querySelector('#js-switch input');
 const body = document.body;
 
-// Load saved theme preference
-if (localStorage.getItem('theme') === 'dark') {
-body.classList.add('dark-mode');
-toggleInput.checked = true;
-}
+// Set default class for correct icon display
+body.classList.add(localStorage.getItem('theme') === 'dark' ? 'dark-mode' : 'light-mode');
+toggleInput.checked = localStorage.getItem('theme') === 'dark';
 
-// Toggle event
+// Event listener
 toggleInput.addEventListener('change', () => {
-body.classList.toggle('dark-mode');
-const theme = body.classList.contains('dark-mode') ? 'dark' : 'light';
-localStorage.setItem('theme', theme);
+  const isDark = toggleInput.checked;
+
+  body.classList.toggle('dark-mode', isDark);
+  body.classList.toggle('light-mode', !isDark);
+
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
 });

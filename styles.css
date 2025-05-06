@@ -10,7 +10,6 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    margin-top: 100px;
 }
 
 html {
@@ -812,9 +811,10 @@ input:checked + .slider:before {
   body.dark-mode .hire-me p,
   body.dark-mode .hamburger,
   body.dark-mode li, 
-  body.dark-mode .contact-info {
+  body.dark-mode .contact-info, 
+  body.dark-mode .nav-links a{
     color: white;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   body.dark-mode .details-container,
@@ -822,7 +822,7 @@ input:checked + .slider:before {
   body.dark-mode .package, 
   body.dark-mode .contact-info-upper-container {
     background-color: rgb(81, 80, 80);
-    transition: all 0.6s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   body.dark-mode .section__text__p1,
@@ -830,19 +830,21 @@ input:checked + .slider:before {
   body.dark-mode .details-container p,
   body.dark-mode .nav-links-1 {
     color: rgb(233, 227, 227);
-    transition: all 0.6s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
-  body.dark-mode .experience-subtitle {
+  body.dark-mode .experience-subtitle,
+  body.dark-mode .about-term,
+  body.dark-mode .project-title {
     color: black;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   body.dark-mode .icon {
     border: 0.5px solid white;
     border-radius: 3rem;
     background-color: white;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   body.dark-mode #hamburger-nav{
@@ -850,5 +852,5 @@ input:checked + .slider:before {
     backdrop-filter: blur(10px); /* Glass blur */
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    transition: all 0.6s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
