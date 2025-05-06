@@ -260,17 +260,20 @@ section {
 .btn-color-1, 
 .btn-color-2 {
     border: rgb(53, 53, 53) 0, 1rem solid;
+    border-radius: 2rem;
 }
 
 .btn-color-1:hover, 
 .btn-color-2:hover {
     cursor: pointer;
+    border-radius: 2rem;
 }
 
 .btn-color-1, 
 .btn-color-2:hover {
     background-color: rgb(53, 53, 53);
     color: white;
+    border-radius: 2rem;
 }
 
 .btn-color-1:hover{
@@ -279,10 +282,12 @@ section {
 
 .btn-color-2{
     background-color: none;
+    border-radius: 2rem;
 }
 
 .btn-color-2:hover{
     border: rgb(255, 255, 255) 0.1rem solid;
+    border-radius: 2rem;
 }
 
 .btn-container{
