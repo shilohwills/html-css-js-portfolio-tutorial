@@ -1,0 +1,8 @@
+.lazy-image {
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+.lazy-image.fade-in {
+    opacity: 1;
+}
