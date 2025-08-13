@@ -47,6 +47,9 @@
     .about-containers {
         margin-top: 0;
     }
+    .contact-container {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -54,7 +57,21 @@
         margin-top: 60px;
     }
 
-    #contact, footer {
+    #contact {
+        height: auto;
+        padding-bottom: 4vh;
+    }
+
+    #contact .title {
+        width: auto;
+    }
+
+    #contact .section__text__p2 {
+        width: auto;
+        max-width: none;
+    }
+
+    footer {
         height: 40vh;
     }
 
@@ -69,7 +86,7 @@
         height: fit-content;
         margin-bottom: 2rem;
     }
-    .about-containers, .contact-info-upper-container, .btn-container{
+    .about-containers, .btn-container{
         flex-wrap: wrap;
     }
 
@@ -113,6 +130,10 @@
     @media screen and (max-width: 768px) {
         .container h2 {
             font-size: 30px;
+        }
+        .trust-container {
+            flex-direction: column;
+            align-items: center;
         }
     }
     
