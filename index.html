@@ -15,7 +15,7 @@
   <meta name="theme-color" content="#6C5CE7">
 
   <!-- ========== PRIMARY META TAGS ========== -->
-  <title>MedBinice — Photography Portfolio Template | Egbuji Shiloh</title>
+  <title> Photographer's Portfolio Template with Downloadable Gallery | Egbuji Shiloh</title>
   <meta name="description" content="Fast, responsive HTML portfolio template for photographers. Includes demo, docs, and 30 days email support — view the live demo.">
   <meta name="robots" content="index, follow">
   <meta name="referrer" content="no-referrer-when-downgrade">
@@ -23,23 +23,55 @@
   <!-- ========== OPEN GRAPH (FACEBOOK / LINKEDIN) ========== -->
   <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="Egbuji Shiloh — Template Shop">
-  <meta property="og:title" content="MedBinice — Photography Portfolio Template">
+  <meta property="og:title" content="Photographer's Portfolio Template with Downloadable Gallery">
   <meta property="og:description" content="Fast, responsive HTML portfolio template for photographers. Includes demo, docs, and 30 days email support — view the live demo.">
-  <meta property="og:image" content="https://egbujishilohportfolio.netlify.app/assets/og-medbinice-1200x630.PNG">
-  <meta property="og:image:width" content="1242">
-  <meta property="og:image:height" content="2392">
-  <meta property="og:image:alt" content="MedBinice — Photography portfolio template — responsive demo screenshot">
+
+  <!-- Primary landscape (recommended for Facebook / LinkedIn / Large cards) -->
+  <meta property="og:image" content="https://egbujishilohportfolio.netlify.app/assets/og-1200x630-center.webp">
+  <meta property="og:image:secure_url" content="https://egbujishilohportfolio.netlify.app/assets/og-1200x630-center.webp">
+  <meta property="og:image:type" content="image/webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Egbuji Shiloh Photographer's Template — clean, responsive photography template">
+
+  <!-- Square variant (used by some platforms / preview UIs that prefer square) -->
+  <meta property="og:image" content="https://egbujishilohportfolio.netlify.app/assets/og-1200x1200-center.png">
+  <meta property="og:image:secure_url" content="https://egbujishilohportfolio.netlify.app/assets/og-1200x1200-center.png">
+  <meta property="og:image:type" content="image/webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="1200">
+  <meta property="og:image:alt" content="Egbuji Shiloh Photographer's Portfolio Template — square preview">
+
+  <!-- Small thumbnail (chat apps / constrained previews) -->
+  <meta property="og:image" content="https://egbujishilohportfolio.netlify.app/assets/og-600x315-center.png">
+  <meta property="og:image:secure_url" content="https://egbujishilohportfolio.netlify.app/assets/og-600x315-center.png">
+  <meta property="og:image:type" content="image/webp">
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="315">
+  <meta property="og:image:alt" content="MedBinice template — thumbnail preview">
+
+  <!-- PNG fallback for clients that don't accept WebP -->
+  <meta property="og:image" content="https://egbujishilohportfolio.netlify.app/assets/og-1200x630-center.webp">
+  <meta property="og:image:secure_url" content="https://egbujishilohportfolio.netlify.app/assets/og-1200x630-center.webp">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Template demo screenshot (PNG fallback)">
+
   <meta property="og:url" content="https://egbujishilohportfolio.netlify.app/">
   <meta property="og:type" content="website">
 
   <!-- ========== TWITTER CARD ========== -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="MedBinice — Photography Portfolio Template">
+  <meta name="twitter:title" content="Photographer's Portfolio Template with Downloadable Gallery">
   <meta name="twitter:description" content="Fast, responsive HTML portfolio template for photographers. Includes demo, docs, and 30 days email support — view the live demo.">
-  <meta name="twitter:image" content="https://egbujishilohportfolio.netlify.app/assets/og-medbinice-1200x630.PNG">
+  <!-- Twitter: point to the primary landscape image (Twitter prefers explicit tag) -->
+  <meta name="twitter:image" content="https://egbujishilohportfolio.netlify.app/assets/og-1200x630-center.webp">
   <meta name="twitter:image:alt" content="MedBinice template — responsive portfolio demo">
-  <!-- twitter:creator set to your handle -->
   <meta name="twitter:creator" content="@SEgbuji">
+
+  <!-- Legacy image_src fallback -->
+  <link rel="image_src" href="https://egbujishilohportfolio.netlify.app/assets/og-1200x630-center.png">
 
   <!-- ========== CANONICAL URL ========== -->
   <link rel="canonical" href="https://egbujishilohportfolio.netlify.app/">
@@ -70,7 +102,9 @@
     "@type": "Product",
     "name": "Photography Portfolio Template",
     "image": [
-        "https://egbujishilohportfolio.netlify.app/assets/og-medbinice-1200x630.webp"
+        "https://egbujishilohportfolio.netlify.app/assets/og-new-medbinice-1200x630.webp",
+        "https://egbujishilohportfolio.netlify.app/assets/og-new-medbinice-1200x1200.webp",
+        "https://egbujishilohportfolio.netlify.app/assets/og-medbinice-600x315.webp"
     ],
     "description": "Fast, responsive HTML portfolio template for photographers. Includes demo, docs, and 30 days email support.",
     "sku": "PT-001",
@@ -89,7 +123,6 @@
     }
     </script>
 
-
   <!-- ========== PERFORMANCE: FONTS / IMAGE PRELOADS (configure paths before publish) ========== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -97,6 +130,7 @@
   <link rel="preload" href="/assets/fonts/Inter-Variable.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/hero-desktop.jpg" as="image">
 </head>
+
 
 <body>
     <nav id="desktop-nav">
