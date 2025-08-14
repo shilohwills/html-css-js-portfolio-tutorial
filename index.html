@@ -1,57 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ========== STYLESHEETS ========== -->
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-    <link rel="stylesheet" href="lazyloading.css">
+  <!-- ========== STYLESHEETS ========== -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+  <link rel="stylesheet" href="lazyloading.css">
 
-    <!-- ========== PRIMARY META TAGS ========== -->
-    <title>Egbuji Shiloh — Portfolio & MedBinice Template | Responsive HTML Template</title>
-    <meta name="description" content="Portfolio & template shop — MedBinice: a responsive photography portfolio template. Live demo, documentation, and 30 days support.">
-    <meta name="robots" content="index, follow">
+  <!-- ========== FAVICONS & THEME ========== -->
+  <link rel="icon" href="/assets/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#6C5CE7">
 
-    <!-- ========== OPEN GRAPH (FACEBOOK/LINKEDIN) ========== -->
-    <meta property="og:title" content="MedBinice — Photography Portfolio Template">
-    <meta property="og:description" content="Fast, responsive HTML portfolio template for photographers. Includes demo, docs, and simple customization steps. View live demo.">
-    <meta property="og:image" content="https://egbujishilohportfolio.netlify.app/thumbnail.jpg">
-    <meta property="og:url" content="https://egbujishilohportfolio.netlify.app/">
-    <meta property="og:type" content="website">
+  <!-- ========== PRIMARY META TAGS ========== -->
+  <title>MedBinice — Photography Portfolio Template | Egbuji Shiloh</title>
+  <meta name="description" content="Fast, responsive HTML portfolio template for photographers. Includes demo, docs, and 30 days email support — view the live demo.">
+  <meta name="robots" content="index, follow">
+  <meta name="referrer" content="no-referrer-when-downgrade">
 
-    <!-- ========== TWITTER CARD ========== -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="MedBinice — Photography Portfolio Template">
-    <meta name="twitter:description" content="Fast, responsive HTML portfolio template for photographers. Includes demo, docs, and simple customization steps. View live demo.">
-    <meta name="twitter:image" content="https://egbujishilohportfolio.netlify.app/thumbnail.jpg">
+  <!-- ========== OPEN GRAPH (FACEBOOK / LINKEDIN) ========== -->
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Egbuji Shiloh — Template Shop">
+  <meta property="og:title" content="MedBinice — Photography Portfolio Template">
+  <meta property="og:description" content="Fast, responsive HTML portfolio template for photographers. Includes demo, docs, and 30 days email support — view the live demo.">
+  <meta property="og:image" content="https://egbujishilohportfolio.netlify.app/assets/assets/og-medbinice-1200x630.PNG">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="MedBinice — Photography portfolio template — responsive demo screenshot">
+  <meta property="og:url" content="https://egbujishilohportfolio.netlify.app/">
+  <meta property="og:type" content="website">
 
-    <!-- ========== CANONICAL URL ========== -->
-    <link rel="canonical" href="https://egbujishilohportfolio.netlify.app/">
+  <!-- ========== TWITTER CARD ========== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MedBinice — Photography Portfolio Template">
+  <meta name="twitter:description" content="Fast, responsive HTML portfolio template for photographers. Includes demo, docs, and 30 days email support — view the live demo.">
+  <meta name="twitter:image" content="https://egbujishilohportfolio.netlify.app/assets/og-medbinice-1200x630.webp">
+  <meta name="twitter:image:alt" content="MedBinice template — responsive portfolio demo">
+  <!-- twitter:creator set to your handle -->
+  <meta name="twitter:creator" content="@SEgbuji">
 
-    <!-- ========== STRUCTURED DATA (SCHEMA.ORG) ========== -->
-    <script type="application/ld+json">
+  <!-- ========== CANONICAL URL ========== -->
+  <link rel="canonical" href="https://egbujishilohportfolio.netlify.app/">
+
+  <!-- ========== SITE SCHEMA (homepage) ========== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Egbuji Shiloh Portfolio & Template Shop",
+    "url": "https://egbujishilohportfolio.netlify.app/",
+    "description": "Portfolio and MedBinice template shop by Egbuji Shiloh",
+    "author": {
+      "@type": "Person",
+      "name": "Shiloh Egbuji",
+      "url": "https://egbujishilohportfolio.netlify.app/",
+      "sameAs": [
+        "https://github.com/shilohwills",
+        "https://www.linkedin.com/in/shiloh-egbuji-635662364"
+      ]
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Egbuji Shiloh Portfolio & Template Shop",
-        "url": "https://egbujishilohportfolio.netlify.app/",
-        "author": {
-            "@type": "Person",
-            "name": "Shiloh Egbuji",
-            "url": "https://egbujishilohportfolio.netlify.app/",
-            "sameAs": [
-                "https://github.com/shilohwills",
-                "https://www.linkedin.com/in/shiloh-egbuji-635662364?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-            ]
-        }
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Photography Portfolio Template",
+    "image": [
+        "https://egbujishilohportfolio.netlify.app/assets/og-medbinice-1200x630.webp"
+    ],
+    "description": "Fast, responsive HTML portfolio template for photographers. Includes demo, docs, and 30 days email support.",
+    "sku": "PT-001",
+    "brand": {
+        "@type": "Brand",
+        "name": "Egbuji Shiloh"
+    },
+    "offers": {
+        "@type": "Offer",
+        "url": "https://egbujishilohportfolio.netlify.app",
+        "priceCurrency": "USD",
+        "price": "15.99",
+        "priceValidUntil": "2025-12-31",
+        "availability": "https://schema.org/InStock"
+    }
     }
     </script>
 
-    <!-- ========== PERFORMANCE OPTIMIZATION ========== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <!-- ========== PERFORMANCE: FONTS / IMAGE PRELOADS (configure paths before publish) ========== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Example preloads; replace paths with your actual assets or remove if not using -->
+  <link rel="preload" href="/assets/fonts/Inter-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/hero-desktop.jpg" as="image">
 </head>
+
 <body>
     <nav id="desktop-nav">
         <div class="logo">Egbuji Shiloh</div>
@@ -62,6 +108,7 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#hire">Hire</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="docs.html" target="_blank">Docs</a></li>
             </ul>
         </div>
 
@@ -110,39 +157,40 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#hire">Hire</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="docs.html" target="_blank">Docs</a></li>
             </div>
         </div>
     </nav>
 
     <section id="profile">
         <div class="section__pic-container">
-            <img data-src="./assets/profile-pic.png" alt="Headshot of Shiloh Egbuji, creator of the MedBinice portfolio template." class="lazy-image">
+            <img data-src="./assets/profile-pic.png" alt="MedBinice portfolio template screenshot." class="lazy-image">
         </div>
         <div class="section__text">
             <div class="badge">TEMPLATE DEMO</div>
-            <h1 class="title">Egbuji Shiloh Portfolio Template</h1>
-            <p class="section__text__p2">Responsive HTML/CSS Portfolio & Personal site</p>
+            <h1 class="title">MedBinice — Photography Portfolio Template</h1>
+            <p class="section__text__p2">Responsive HTML/CSS template for photographers — fast to customize, deploys on Netlify & Vercel.</p>
             <div class="btn-container">
-                <button class="btn btn-color-1" onclick="window.open(`./assets/resume-example.pdf`)">Join Waitlist</button>
-                <button class="btn btn-color-2" onclick="location.href=`./#contact`">See Live Demo</button>
+                <button class="btn btn-color-1" onclick="location.href='./#hire'">Buy Template</button>
+                <button class="btn btn-color-2" onclick="location.href='./#projects'">Live Demo</button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My linkedin profile" class="icon" onclick="location.href=`https://www.linkedin.com/in/shiloh-egbuji-635662364?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app`">
-                <img src="./assets/github.png" alt="My Githubprofile" class="icon" onclick="location.href=`https://github.com/shilohwills`">
+                <img src="./assets/linkedin.png" alt="LinkedIn profile" class="icon" onclick="location.href=`https://www.linkedin.com/in/shiloh-egbuji-635662364?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app`">
+                <img src="./assets/github.png" alt="GitHub profile" class="icon" onclick="location.href=`https://github.com/shilohwills`">
             </div>
         </div>
     </section>
 
     <section id="about">
         <p class="section__text__p1">Get To Know</p>
-        <h1 class="title">About This Template</h1>
+        <h2 class="title">About This Template</h2>
         <div class="section-container">
             <div class="section__pic-container">
                 <img data-src="./assets/about-pic.png" alt="Screenshot of the MedBinice template's about section, showing a two-column layout." class="about-pic lazy-image">
             </div>
             <div class="about-details-container">
                 <div class="text-container">
-                    <p>A clean, responsive portfolio template built with HTML, SASS and vanilla JavaScript — easy to customize and ready to deploy.</p>
+                    <p>A clean, responsive portfolio template for photographers and creatives, built with HTML, SASS and vanilla JavaScript — easy to customize and ready to deploy.</p>
                 </div>
                 <div class="about-containers">
                     <div class="details-container">
@@ -165,19 +213,19 @@
                 <div class="text-container">
                   <p><b>What’s included:</b></p>
                   <ul class="features-list">
-                    <li>HTML source files (index + sections)</li>
-                    <li>SASS styles + compiled CSS</li>
-                    <li>Demo images & assets (free to use)</li>
-                    <li>Documentation: setup guide & customization steps</li>
-                    <li>Support: 30 days of free fixes after purchase</li>
+                    <li>HTML source files (index & section templates)</li>
+                    <li>SASS + compiled CSS</li>
+                    <li>Demo images & assets</li>
+                    <li>Documentation: setup & customization</li>
+                    <li>30 days free email support</li>
                   </ul>
                 </div>
                 <div class="text-container">
                     <p>Clean, well-commented code — built for speed and accessibility.</p>
                 </div>
                 <div class="btn-container">
-                    <button class="btn btn-color-1" onclick="window.open(`./assets/resume-example.pdf`)">Join Waitlist</button>
-                    <button class="btn btn-color-2" onclick="location.href=`./#contact`">See Live Demo</button>
+                    <button class="btn btn-color-1" onclick="location.href='./#hire'">Buy Template</button>
+                    <button class="btn btn-color-2" onclick="location.href='./#projects'">Live Demo</button>
                 </div>
             </div>
         </div>
@@ -186,7 +234,7 @@
 
     <section id="experience">
         <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience & Skills</h1>
+        <h2 class="title">Experience & Skills</h2>
         <div class="experience-intro">
             <p>Practical experience building responsive, accessible web apps and component-driven UIs.</p>
         </div>
@@ -291,7 +339,7 @@
 
     <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
+        <h2 class="title">Projects</h2>
         <div class="projects-container">
             <div class="project-card hero-project">
                 <div class="project-img-container">
@@ -336,8 +384,8 @@
                     <img data-src="./assets/project-3.png" alt="Screenshot of a web application project." class="project-img lazy-image">
                 </div>
                 <div class="project-details">
-                    <h2 class="project-title">Project Three</h2>
-                    <p class="project-description">A short description of project three.</p>
+                    <h2 class="project-title">Demo Project Three</h2>
+                    <p class="project-description">A placeholder for your third project. You can describe it here.</p>
                     <div class="project-metadata">
                         <span>React</span>
                         <span>Node.js</span>
@@ -355,7 +403,7 @@
 
     <section id="hire" class="hire-me">
         <div class="container">
-          <h1 class="title">Pricing & Licenses</h1>
+          <h2 class="title">Pricing & Licenses</h2>
           <p class="section__text__p1">Choose the license that fits your project.</p>
           
           <div class="packages">
@@ -376,7 +424,7 @@
                   <span class="btn-text">Buy Single License</span>
                 </button>
               </a>
-              <a href="#" class="secondary-cta">View License Terms</a>
+              <a href="LICENSE_SUMMARY.pdf" class="secondary-cta" target="_blank">License at a glance</a>
             </div>
             <div class="package popular">
               <div class="badge">Most Popular</div>
@@ -394,7 +442,7 @@
                   <span class="btn-text">Get Agency License</span>
                 </button>
               </a>
-              <a href="#" class="secondary-cta">View License Terms</a>
+              <a href="LICENSE_SUMMARY.pdf" class="secondary-cta" target="_blank">License at a glance</a>
             </div>
           </div>
 
@@ -418,7 +466,7 @@
             </div>
             <div class="faq-item">
                 <h4>What is the refund policy?</h4>
-                <p>I offer a 7-day money-back guarantee if you are not satisfied with the template. Please see the license terms for more details.</p>
+                <p>7-day refund if the download is unused; see full terms.</p>
             </div>
           </div>
         </div>
@@ -427,7 +475,7 @@
 
     <section id="contact">
         <p class="section__text__p1">Get in touch</p>
-        <h1 class="title">Contact & Support</h1>
+        <h2 class="title">Contact & Support</h2>
         <p class="section__text__p2">Questions about templates, custom work, or licensing? Send a message — we’ll get back to you shortly.</p>
         <div class="contact-container">
             <div class="contact-form-container">
@@ -490,15 +538,15 @@
     </section>
 
     <section id="trust">
-        <h1 class="title">Trusted by Creators Worldwide</h1>
+        <h2 class="title">Trusted by Creators Worldwide</h2>
         <p class="section__text__p2">Templates designed for speed, backed by clear documentation and responsive support.</p>
         <div class="trust-container">
             <div class="testimonial-card">
                 <div class="testimonial-photo-container">
                     <img src="./assets/testimonial-1.png" alt="Photo of Chinwe Okoro" class="testimonial-photo lazy-image">
                 </div>
-                <blockquote>“Saved me days launching a professional portfolio — easy to edit and looks great.”</blockquote>
-                <cite>— Chinwe Okoro, Freelance Photographer</cite>
+                <blockquote>“Saved me days launching my portfolio — easy to customize and deploy.”</blockquote>
+                <cite>— Chinwe Okoro, Photographer</cite>
             </div>
             <div class="testimonial-card">
                 <div class="testimonial-photo-container">
@@ -538,10 +586,16 @@
                 </ul>
             </div>
         </nav>
-        <p>Copyright &#169; 2025 Egbuji Shiloh. All Rights Reserved.</p>
+        <div class="footer-legal">
+            <p>Copyright &#169; 2025 Egbuji Shiloh. All Rights Reserved.</p>
+            <div class="legal-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+        </div>
     </footer>
-    <script src="script.js"></script>
-    <script src="switch.js"></script>
-    <script src="lazyloading.js"></script>
+    <script src="script.js" defer></script>
+    <script src="switch.js" defer></script>
+    <script src="lazyloading.js" defer></script>
 </body>
 </html>
