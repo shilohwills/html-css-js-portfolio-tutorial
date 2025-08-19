@@ -30,6 +30,10 @@
         display: block;
     }
 
+    #profile {
+        display: flex;
+    }
+
     .arrow{
         display: none;
     }
@@ -40,8 +44,8 @@
         margin: 0 5%;
     }
     .section__pic-container {
-        width: 275px;
-        height: 275px;
+        width: 400px;
+        height: 400px;
         margin: 10px 2rem;
     }
     .about-containers {
@@ -108,8 +112,8 @@
         text-align: center;
     }
     .section__pic-container{
-        width: auto;
-        height: 46vw;
+        width: 300px;
+        height: 300px;
         justify-content: center;
     }
     .section__text__p2{
@@ -124,6 +128,12 @@
     }
     .btn-container{
         margin-bottom: 10px;
+    }
+    .section__pic-container img{
+        width: 400px;
+    }
+    .section__pic-container {
+        width: 100%;
     }
     }
 

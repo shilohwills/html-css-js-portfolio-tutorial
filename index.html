@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
     <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="mediaqueries.css">
   <link rel="stylesheet" href="lazyloading.css">
+  <link rel="stylesheet" href="slideshow.css">
 
   <!-- ========== FAVICONS & THEME ========== -->
   <link rel="icon" href="/assets/favicon.ico" sizes="any">
@@ -198,15 +199,15 @@
 
     <section id="profile">
         <div class="section__pic-container">
-            <img data-src="./assets/profile-pic.png" alt="MedBinice portfolio template screenshot." class="lazy-image">
+            <img data-src="./assets/IMG_1227.JPG" alt="MedBinice portfolio template screenshot." class="lazy-image">
         </div>
         <div class="section__text">
             <div class="badge">TEMPLATE DEMO</div>
-            <h1 class="title">MedBinice — Photography Portfolio Template</h1>
+            <h1 class="title">Photographer's Portfolio Template</h1>
             <p class="section__text__p2">Responsive HTML/CSS template for photographers — fast to customize, deploys on Netlify & Vercel.</p>
             <div class="btn-container">
                 <button class="btn btn-color-1" onclick="location.href='./#hire'">Buy Template</button>
-                <button class="btn btn-color-2" onclick="location.href='./#projects'">Live Demo</button>
+                <button class="btn btn-color-2" onclick="location.href=`https://medbinice.netlify.app/`">Live Demo</button>
             </div>
             <div id="socials-container">
                 <img src="./assets/linkedin.png" alt="LinkedIn profile" class="icon" onclick="location.href=`https://www.linkedin.com/in/shiloh-egbuji-635662364?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app`">
@@ -217,10 +218,42 @@
 
     <section id="about">
         <p class="section__text__p1">Get To Know</p>
-        <h2 class="title">About This Template</h2>
+        <h2 class="title">About This Template</h2>        
+
         <div class="section-container">
-            <div class="section__pic-container">
-                <img data-src="./assets/about-pic.png" alt="Screenshot of the MedBinice template's about section, showing a two-column layout." class="about-pic lazy-image">
+            <div id="slideshow" class="slideshow-container" role="region" aria-label="Image slideshow">
+                <div class="slideshow-track">
+                    <!-- Slides will be injected here by JavaScript -->
+                </div>
+        
+                <!-- Desktop Navigation -->
+                <button class="slideshow-nav-btn prev" aria-label="Previous slide">&#10094;</button>
+                <button class="slideshow-nav-btn next" aria-label="Next slide">&#10095;</button>
+        
+                <!-- Dot Indicators -->
+                <div class="dots-container">
+                    <!-- Dots will be injected here -->
+                </div>
+        
+                <!-- Play/Pause Button -->
+                <button class="play-pause-btn" aria-label="Pause slideshow">
+                    <span class="icon-play">&#9658;</span>
+                    <span class="icon-pause">&#10074;&#10074;</span>
+                </button>
+        
+                <!-- Accessibility Announcer -->
+                <div class="status-announcer visually-hidden" aria-live="polite" aria-atomic="true"></div>
+
+                <!-- No-JS Fallback -->
+                <noscript>
+                    <div class="slide" style="opacity: 1; position: static;">
+                        <picture>
+                            <source srcset="./ShortPixelOptimized/IMG_E1745.avif" type="image/avif">
+                            <source srcset="./ShortPixelOptimized/IMG_E1745.webp" type="image/webp">
+                            <img src="./ShortPixelOptimized/IMG_E1745.JPG" alt="Photo of Chinwe Okoro">
+                        </picture>
+                    </div>
+                </noscript>
             </div>
             <div class="about-details-container">
                 <div class="text-container">
@@ -408,7 +441,7 @@
                         <span>SEO-ready</span>
                     </div>
                     <div class="btn-container">
-                        <button class="btn btn-color-1" onclick="location.href='https://github.com'">Live Demo</button>
+                        <button class="btn btn-color-1" onclick="location.href=`https://medbinice.netlify.app/`">Live Demo</button>
                         <button class="btn btn-color-2" onclick="location.href='https://github.com'">View on GitHub</button>
                     </div>
                 </div>
@@ -426,7 +459,7 @@
                         <span>Express</span>
                     </div>
                     <div class="btn-container">
-                        <button class="btn btn-color-1" onclick="location.href='https://github.com'">Live Demo</button>
+                        <button class="btn btn-color-1" onclick="location.href=`https://medbinice.netlify.app/`">Live Demo</button>
                         <button class="btn btn-color-2" onclick="location.href='https://github.com'">View on GitHub</button>
                     </div>
                 </div>
@@ -465,7 +498,7 @@
               <h3>Agency License</h3>
               <p class="price">$99</p>
               <p class="package-lead">Use on multiple client sites with priority support and white-label options.</p>
-              <ul>
+              <ul style="margin-bottom: 55px;">
                 <li>All features of Single-Site License</li>
                 <li>Use on unlimited client sites</li>
                 <li>Priority email support</li>
@@ -473,7 +506,7 @@
               </ul>
               <a href="https://www.paypal.com/ncp/payment/ZBQ54QMJ3SJ7L">
                 <button class="pay-btn">
-                  <span class="btn-text">Get Agency License</span>
+                  <span class="btn-text" style="">Get Agency License</span>
                 </button>
               </a>
               <a href="LICENSE_SUMMARY.pdf" class="secondary-cta" target="_blank">License at a glance</a>
@@ -481,8 +514,8 @@
           </div>
 
           <div class="custom-work-section">
-            <h2>Need Custom Work?</h2>
-            <p>If you need custom modifications or a bespoke website, I'm available for freelance projects.</p>
+            <h2 style="margin-bottom: -5px;">Need Custom Work?</h2>
+            <p style="margin-bottom: 20px;">If you need custom modifications or a bespoke website, I'm available for freelance projects.</p>
             <div class="btn-container">
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Request a Quote</button>
             </div>
@@ -507,7 +540,7 @@
         <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href=`./#contact`">
     </section>
 
-    <section id="contact">
+    <section id="contact" style="margin-bottom: 60px;">
         <p class="section__text__p1">Get in touch</p>
         <h2 class="title">Contact & Support</h2>
         <p class="section__text__p2">Questions about templates, custom work, or licensing? Send a message — we’ll get back to you shortly.</p>
@@ -577,22 +610,22 @@
         <div class="trust-container">
             <div class="testimonial-card">
                 <div class="testimonial-photo-container">
-                    <img src="./assets/testimonial-1.png" alt="Photo of Chinwe Okoro" class="testimonial-photo lazy-image">
+                    <img data-src="./assets/IMG_0444_1.JPG" alt="Photo of Chinwe Okoro" class="testimonial-photo lazy-image">
                 </div>
                 <blockquote>“Saved me days launching my portfolio — easy to customize and deploy.”</blockquote>
                 <cite>— Chinwe Okoro, Photographer</cite>
             </div>
             <div class="testimonial-card">
                 <div class="testimonial-photo-container">
-                    <img src="./assets/testimonial-2.png" alt="Photo of Tunde Ade" class="testimonial-photo lazy-image">
-                </div>
+                    <img data-src="./assets/IMG_0441_1.JPG" alt="Photo of Tunde Ade" class="testimonial-photo lazy-image">
+                </div>      
                 <blockquote>“Clean code and simple customization. Got my site live in a day.”</blockquote>
                 <cite>— Tunde Ade, Creative Director</cite>
             </div>
             <div class="testimonial-card">
                 <div class="testimonial-photo-container">
-                    <img src="./assets/testimonial-3.png" alt="Photo of Amina Yusuf" class="testimonial-photo lazy-image">
-                </div>
+                    <img data-src="./assets/IMG_0445_1.JPG" alt="Photo of Amina Yusuf" class="testimonial-photo lazy-image">
+                </div>   
                 <blockquote>“Perfect for client projects. Documentation is excellent.”</blockquote>
                 <cite>— Amina Yusuf, Web Designer</cite>
             </div>
@@ -603,7 +636,7 @@
             <span>Instant download</span>
         </div>
         <div class="btn-container">
-            <button class="btn btn-color-2" onclick="location.href='./#projects'">See Live Demo</button>
+            <button class="btn btn-color-2" onclick="location.href=`https://medbinice.netlify.app/`">See Live Demo</button>
             <button class="btn btn-color-1" onclick="location.href='./#hire'">Buy Template</button>
         </div>
     </section>
@@ -631,5 +664,6 @@
     <script src="script.js" defer></script>
     <script src="switch.js" defer></script>
     <script src="lazyloading.js" defer></script>
+    <script src="slideshow.js" defer></script>
 </body>
 </html>
